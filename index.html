@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="//unpkg.com/brain.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_1">
+            <div class="boxes center">
+                <div class="box"><span>Text in black</span></div>
+                <div class="box white"><span>Text in white</span></div>
+            </div>
+
+            <div class="btns center">
+                <button id="black">Black</button>
+                <button id="white">White</button>
+                <button id="guess" disabled title="You need to train the AI!">Guess</button>
+            </div>
+
+            <div class="guess center">
+                <div class="box"><span></span></div>
+            </div>
+        </div>
+
+
+        <div class="container_2">
+            <div id="diagram" class="center"></div>
+            <div class="controls center">
+                <label># clusters</label>
+                <input type="range" id="clusters" value="1" max="5" min="1">
+            </div>
+
+            <div class="controls center">
+                <label># node per cluster</label>
+                <input type="range" id="num" value="4" max="12" min="1">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
