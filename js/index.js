@@ -53,10 +53,10 @@
     white.addEventListener('click', chooseColor.bind(window, 1));
     black.addEventListener('click', chooseColor.bind(window, 0));
     guess.addEventListener('click', () => {
-        updateUI()
+        updateUI();
         const res = net.run(color)[0];
 
-        box3.innerHTML = `(${Math.floor(res * 100)}% sure)<br>`
+        box3.innerHTML = `(${Math.floor(res * 100)}% sure)<br>`;
         box3.innerHTML += res < 0.5 ? 'white' : 'black';
         box3.style.color = res < 0.5 ? 'white' : 'black';
     });
